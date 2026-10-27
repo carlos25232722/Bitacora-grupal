@@ -3,122 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plantilla Control de Trabajo Diario ADSO - Semana 2</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            background-color: #f4f6f9;
-            color: #333;
-        }
-        .container {
-            max-width: 1000px;
-            margin: auto;
-            background: #ffffff;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #1a365d;
-            border-bottom: 2px solid #e2e8f0;
-            padding-bottom: 10px;
-            margin-top: 25px;
-        }
-        ol {
-            background: #f8fafc;
-            padding: 20px 20px 20px 40px;
-            border-left: 4px solid #1e293b;
-            border-radius: 4px;
-        }
-        ol li {
-            margin-bottom: 10px;
-            font-size: 14px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-        }
-        th, td {
-            border: 1px solid #cbd5e1;
-            padding: 12px;
-            text-align: left;
-            font-size: 14px;
-        }
-        th {
-            background-color: #1e293b;
-            color: #ffffff;
-            text-transform: uppercase;
-            font-size: 13px;
-            letter-spacing: 0.5px;
-        }
-        tr:nth-child(even) {
-            background-color: #f8fafc;
-        }
-        tr:hover {
-            background-color: #f1f5f9;
-        }
-        .col-name {
-            font-weight: bold;
-            color: #0f172a;
-            white-space: nowrap;
-        }
-    </style>
+    <title>Bitácora Grupal - ADSO</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <!-- Enlaces de navegación del equipo -->
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Información General del Programa</h2>
+            <table>
+                <caption>Datos generales del aprendiz y programa de formación</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Campo</th>
+                        <th scope="col">Detalle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Programa de Formación</th>
+                        <td>Analisis Y desarrollo de software</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Competencia</th>
+                        <td>DESARROLLAR LA SOLUCIÓN DE SOFTWARE DE ACUERDO CON EL DISEÑO Y METODOLOGÍAS</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Aprendiz Autor</th>
+                        <td>Carlos Alberto Ordoñez Jaimes</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Ficha / Grupo</th>
+                        <td>3381732</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Sprint / Periodo</th>
+                        <td>Analisis</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-    <div class="container">
-        <h2>Plantilla control de trabajo diario ADSO</h2>
-        
-        <ol>
-            <li><strong>Responsabilidad Única (SRP):</strong> Cada fila documenta un solo evento, tarea o impedimento indivisible. Si realizó tres actividades en el día, registre tres filas independientes.[cite: 11]</li>
-            <li><strong>Cero Adjetivos Subjetivos:</strong> Prohibido escribir "estuvo chévere", "fue difícil", "avanzamos bien". Redacte únicamente los hechos técnicos verificables.[cite: 11]</li>
-            <li><strong>Inmutabilidad:</strong> Si un registro histórico contiene un error o cambio, no lo borre ni sobrescriba. Cree un nuevo registro con fecha actual indicando: "Corrección/Ajuste al registro ID [X]".[cite: 11]</li>
-            <li><strong>Impedimentos:</strong> Si no presentó dificultades, escriba expresamente: "Sin impedimentos operativos".[cite: 11]</li>
-        </ol>
+        <!-- Enlace hacia las reglas y trazabilidad de Esteban -->
+        <div>
+            <p><a href="reglas-septiembre-semana-2.html">Ver Reglas y Trazabilidad - Esteban</a></p>
+        </div>
+    </main>
 
-        <h2>GUÍA DE LLENADO POR COLUMNA</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Columna</th>
-                    <th>Descripción y Formato Esperado</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="col-name">ID</td>
-                    <td>Número consecutivo único para cada actividad o fila (ej. 001, 002).[cite: 11]</td>
-                </tr>
-                <tr>
-                    <td class="col-name">Timestamp (YYYY-MM-DD HH:MM)</td>
-                    <td>Fecha y hora exacta en la que se registra o ejecuta la actividad (formato AAAA-MM-DD HH:MM).[cite: 11]</td>
-                </tr>
-                <tr>
-                    <td class="col-name">Autoría (Responsable)</td>
-                    <td>Nombre o iniciales del aprendiz responsable de ejecutar la actividad.[cite: 11]</td>
-                </tr>
-                <tr>
-                    <td class="col-name">Objeto Técnico (Actividad y Alcance)</td>
-                    <td>Descripción técnica objetiva verificable y concreta de lo ejecutado y su alcance real.[cite: 11]</td>
-                </tr>
-                <tr>
-                    <td class="col-name">Evidencia de Ejecución (Entregable / Enlace)</td>
-                    <td>URL del commit, enlace al Pull Request, captura de pantalla o documento entregable.[cite: 11]</td>
-                </tr>
-                <tr>
-                    <td class="col-name">Impedimentos / Blockers (Qué ejecutó qué falló qué esperaba)</td>
-                    <td>Descripción técnica del error o impedimento. Si no hubo problemas escribir: 'Sin impedimentos operativos'.[cite: 11]</td>
-                </tr>
-                <tr>
-                    <td class="col-name">Plan de Acción (Mitigación / Próxima Tarea)</td>
-                    <td>Acción correctiva tomada, próxima tarea programada o paso para desbloquear la actividad.[cite: 11]</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
+    <footer>
+        <p>&copy; 2026 - SENA - Servicio Nacional de Aprendizaje</p>
+    </footer>
 </body>
 </html>
